@@ -18,9 +18,9 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<li class="nav-item">
+						<!-- <li class="nav-item">
 							<a class="nav-link active" aria-current="page" href="#">Home</a>
-						</li>
+						</li> -->
 						<!-- <li class="nav-item">
 							<a class="nav-link" href="#">Link</a>
 						</li> -->
@@ -32,13 +32,19 @@
 		<div class="container mt-4">
 			<div class="row justify-content-md-center">
 				<div class="col col-lg-2">
-					Export DB
+					<a href="export_db_mysql.php">Export DB</a>
+					<!-- <a href="ex2.php">Export DB</a> -->
 				</div>
 				<div class="col col-lg-2">
-					EK
+					<!-- Export & Import DB MySQL -->
+					<a href="export_only_table_mysql.php">Export Only Table DB</a>
 				</div>
 				<div class="col col-lg-2">
-					Import DB
+					<!-- Export & Import DB MySQL -->
+					<a href="drop_alltable_db.php">Drop Table DB</a>
+				</div>
+				<div class="col col-lg-2">
+					<a href="">Import DB</a>
 				</div>
 			</div>
 		</div>
