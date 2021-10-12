@@ -3,7 +3,7 @@
   $host = "localhost"; //MySQL Server
   $username= "root";  //MySQL Username
   $password= ""; //MySQL Password
-  $db_name = "db_tokoku"; //MySQL Nama Database
+  $db_name = "db_testing"; //MySQL Nama Database
 
   //koneksi ke database
   $kon = new mysqli($host,$username,$password,$db_name);
