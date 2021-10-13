@@ -37,17 +37,25 @@
 				</div>
 				<div class="col col-lg-2">
 					<!-- Export & Import DB MySQL -->
-					<a href="export_only_table_mysql.php">Export Only Table DB</a>
-				</div>
-				<div class="col col-lg-2">
-					<!-- Export & Import DB MySQL -->
 					<a href="drop_alltable_db.php">Drop Table DB</a>
 				</div>
 				<div class="col col-lg-2">
-					<a href="">Import DB</a>
+					<a href="export_only_table_mysql.php">Export Only Table DB</a>
 				</div>
 			</div>
 		</div>
+
+		<div class="container mt-4">
+			<form method="post" action="upload_db.php" enctype="multipart/form-data">
+				<div class="mb-3">
+					<label for="filedb" class="form-label">Upload DB</label>
+					<input type="file" class="form-control" id="filedb" name="filedb" >
+				</div>
+				
+				<button type="submit" class="btn btn-primary" name="uplot">Import DB</button>
+			</form>
+		</div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>
