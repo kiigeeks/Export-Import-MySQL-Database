@@ -13,7 +13,7 @@
   try{
     Shell_exec('C:\xampp\mysql\bin\mysqldump --user='.$dbuser.' --password='.$dbpass.' --host='.$dbhost.' '.$dbname.' > Download-DB/'.$backup_file_name);
     echo ("<script LANGUAGE='JavaScript'>
-      window.alert('Berhasil di Download');
+      window.alert('File sql Berhasil di Eksport');
       window.location.href='index.php';
       </script>");
   } catch (\Exception $e) {

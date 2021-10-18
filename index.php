@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
+    <meta charset="utf-8">    
+		<meta name="description" content="KiiGeeks">
+    <meta name="author" content="KiiGeeks">
+    <meta name="keyword" content="KiiGeeks">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -37,7 +40,7 @@
 				</div>
 				<div class="col col-lg-2">
 					<!-- Export & Import DB MySQL -->
-					<a href="drop_alltable_db.php">Drop Table DB</a>
+					<a href="drop_alltable_db.php">Drop Data DB</a>
 				</div>
 				<div class="col col-lg-2">
 					<a href="export_only_table_mysql.php">Export Only Table DB</a>
@@ -46,12 +49,21 @@
 		</div>
 
 		<div class="container mt-4">
-			<form method="post" action="upload_db.php" enctype="multipart/form-data">
+			<form method="post" action="upload_only_data_table.php" enctype="multipart/form-data">
 				<div class="mb-3">
-					<label for="filedb" class="form-label">Upload DB</label>
-					<input type="file" class="form-control" id="filedb" name="filedb" >
+					<label for="filedb" class="form-label">Upload Data Dan Tabel</label>
+					<input type="file" class="form-control" id="database2" name="database2" >
 				</div>
-				
+				<button type="submit" class="btn btn-primary" name="uplot">Import DB</button>
+			</form>
+		</div>
+<hr>
+		<div class="container mt-4">
+			<form method="post" action="upload_data_trigger_procedure_table.php" enctype="multipart/form-data">
+				<div class="mb-3">
+					<label for="filedb" class="form-label">Upload Data Trigger Procedure Dan Tabel</label>
+					<input type="file" class="form-control" id="database1" name="database1" >
+				</div>
 				<button type="submit" class="btn btn-primary" name="uplot">Import DB</button>
 			</form>
 		</div>
